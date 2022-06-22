@@ -1,0 +1,126 @@
+body{
+    background-image: url(images-20220614T080650Z-001/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    Font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 10px;
+    margin: 50px auto;
+    padding: 10px;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+small{
+    color: gray;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.learn{ grid-column: 1/4;
+        width: 500px;
+        padding: 60px;
+}
+.try{
+    grid-column: 6/4;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    height: 35px;
+    width: 500px;
+    box-shadow: 0px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+
+}
+.form{
+    grid-column: 6/4;
+    background-color: white;
+    padding: 25px;
+    width: 455px;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-shadow: 0px 6px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+    
+}
+button{
+    border-radius: 5px;
+    border-color: hsl(154, 59%, 51%);
+    color: white;
+    border: 0;
+    height: 45px;
+    width: 407px;
+    padding: 10px;
+    background-color: hsl(154, 59%, 51%);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s sease-out;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+}
+button:hover{
+   color: white;
+   background-color: hsl(154, 52%, 64%);
+   border: 2px solid hsl(154, 52%, 64%);
+   cursor: pointer;
+   transition: all 0.4s ease;
+}
+
+.case{
+    height: 45px;
+    width: 400px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+}
+input:required{
+    border: 2px solid;
+    background: url(images-20220614T080650Z-001/images/icon-error.svg) no repeat 95% 50%;
+}
+small{
+    font-size: 10px;
+    text-align: center;
+    margin-left: 35px;
+}
+@media screen and (max-width:900px) {
+    .body{
+        background-color: hsl(0, 100%, 74%);
+        background: url(images-20220614T080650Z-001/images/bg-intro-mobile.png);
+    }
+    .container{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 260px;
+    }
+    .learn{
+        margin-bottom: 10px;
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
